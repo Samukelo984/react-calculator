@@ -7,15 +7,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
-  --primary: #d81e5b;
-  --secondary: #8c38ff;
-  --dark: #131a26;
-  --light: #eee;
-}
-
 body {
-  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  background: linear-gradient(236deg, #74ebd5, #acb6e5);
 }
 
 .App {

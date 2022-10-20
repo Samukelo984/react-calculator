@@ -15,6 +15,7 @@ const App = () => {
     }
     setCalc(calc + value);
     if (!ops.includes(value)) {
+      // enlist-disable-next-line
       setResult(eval(calc + value).toString());
     }
   };
@@ -33,11 +34,12 @@ const App = () => {
   };
 
   const calculate = () => {
+    //enlist-disable-next-line
     setCalc(eval(calc).toString());
   };
 
   const deleteLast = () => {
-    if (calc == "") {
+    if (calc === "") {
       return;
     }
     const value = calc.slice(0, -1);
