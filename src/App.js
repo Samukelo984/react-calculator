@@ -16,6 +16,7 @@ const App = () => {
     setCalc(calc + value);
     if (!ops.includes(value)) {
       // enlist-disable-next-line
+      // eslint-disable-next-line no-eval
       setResult(eval(calc + value).toString());
     }
   };
@@ -35,6 +36,7 @@ const App = () => {
 
   const calculate = () => {
     //enlist-disable-next-line
+    // eslint-disable-next-line no-eval
     setCalc(eval(calc).toString());
   };
 
