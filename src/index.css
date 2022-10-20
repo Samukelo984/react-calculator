@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: var(--light);
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
 }
 
 .App {
@@ -39,14 +39,15 @@ body {
   padding: 1em;
   text-align: right;
   font-size: 1.3rem;
-  font-weight: 300;
-  color: var(--light);
-  background-color: var(--dark);
+  font-weight: 700;
+  color: #131a26;
+  background-color: #eee;
 }
 
 .display span {
   font-size: 0.8rem;
-  color: #888;
+  font-weight: 500;
+  color: #131a26;
 }
 
 button {
@@ -54,14 +55,9 @@ button {
   appearance: none;
   border: none;
   outline: none;
-  transition: 0.4s;
-  color: #fff;
+  color: #131a26;
   font-size: 1.2rem;
   cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.9;
 }
 
 .operators {
@@ -71,7 +67,12 @@ button:hover {
 .operators button {
   flex: 1 1 0%;
   font-weight: 700;
-  background-color: var(--primary);
+  transition: 0.2s ease-in-out;
+  background-color: #22c5ee;
+}
+
+.operators button:hover {
+  background-color: #23fc18;
 }
 
 .keys {
@@ -82,5 +83,10 @@ button:hover {
 .keys button {
   max-width: 33.333%;
   flex: 1 1 33.333%;
-  background-color: var(--dark);
+  transition: 0.2s ease-in-out;
+  background-color: #eee;
+}
+
+.keys button:hover {
+  background-color: #23fc18;
 }
